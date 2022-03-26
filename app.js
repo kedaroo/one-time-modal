@@ -1,6 +1,8 @@
 const modal = document.querySelector(".modal-backdrop");
-const btnModalClose = document.querySelector(".btn-modal-close");
+const modalClose = document.querySelector(".modal-close");
 const isNewVisitor = localStorage.getItem("visited");
+
+modal.style.display = "block";
 
 window.onload = () => {
     if (!isNewVisitor) {
@@ -13,6 +15,6 @@ const eventHandler = () => {
     modal.style.display = "none";
 }
 
-btnModalClose.addEventListener("click", eventHandler);
+modalClose.addEventListener("click", eventHandler);
 
 
