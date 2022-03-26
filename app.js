@@ -1,16 +1,13 @@
 const modal = document.querySelector(".modal-backdrop");
 const btnModalClose = document.querySelector(".btn-modal-close");
-const isNewVisitor = localStorage.getItem("newVisitor");
+const isNewVisitor = localStorage.getItem("visited");
 
-console.log("isNewVisitor:", isNewVisitor);
-console.log("!isNewVisitor:", !isNewVisitor);
-
-if (!isNewVisitor) {
-    modal.style.display = "block";
-    localStorage.setItem("newVisitor", true);
+window.onload = () => {
+    if (!isNewVisitor) {
+        modal.style.display = "block";
+        localStorage.setItem("visited", true);
+    }
 }
-
-// modal.style.display = "block";
 
 const eventHandler = () => {
     modal.style.display = "none";
