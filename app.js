@@ -10,6 +10,8 @@ if (!isNewVisitor) {
     localStorage.setItem("newVisitor", true);
 }
 
+// modal.style.display = "block";
+
 const eventHandler = () => {
     modal.style.display = "none";
 }

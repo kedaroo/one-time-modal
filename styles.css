@@ -14,8 +14,8 @@ body div {
 
 .modal {
     background-color: #fff;
-    width: 400px;
-    margin: 250px auto;
+    max-width: 400px;
+    margin: 200px auto;
     padding: 2rem;
     border-radius: 16px;
 }
