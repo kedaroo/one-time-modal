@@ -1,0 +1,21 @@
+body div {
+    text-align: center;
+}
+
+.modal-backdrop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    background-color: #fff;
+    width: 400px;
+    margin: 250px auto;
+    padding: 2rem;
+    border-radius: 16px;
+}
